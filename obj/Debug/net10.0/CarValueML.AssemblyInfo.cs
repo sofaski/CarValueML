@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarValueML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+490b24c06c678459dc7812120b84f73a6f766933")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarValueML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarValueML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
