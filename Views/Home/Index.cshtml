@@ -1,0 +1,46 @@
+﻿@model CarValueML.Models.CarInputModel
+
+<h2>Оцінювання вигідності покупки автомобіля</h2>
+
+<form asp-action="Predict" method="post">
+    <div>
+        <label asp-for="Buying"></label>
+        <input asp-for="Buying" placeholder="low, med, high, vhigh" />
+    </div>
+
+    <div>
+        <label asp-for="Maint"></label>
+        <input asp-for="Maint" placeholder="low, med, high, vhigh" />
+    </div>
+
+    <div>
+        <label asp-for="Doors"></label>
+        <input asp-for="Doors" placeholder="2, 3, 4, 5more" />
+    </div>
+
+    <div>
+        <label asp-for="Persons"></label>
+        <input asp-for="Persons" placeholder="2, 4, more" />
+    </div>
+
+    <div>
+        <label asp-for="LugBoot"></label>
+        <input asp-for="LugBoot" placeholder="small, med, big" />
+    </div>
+
+    <div>
+        <label asp-for="Safety"></label>
+        <input asp-for="Safety" placeholder="low, med, high" />
+    </div>
+
+    <div>
+        <label asp-for="EstimatedPriceCategory"></label>
+        <input asp-for="EstimatedPriceCategory" placeholder="low, medium, high" />
+    </div>
+
+    <br />
+    <button type="submit">Оцінити</button>
+</form>
+
+<br />
+<a asp-action="History">Переглянути історію прогнозів</a>

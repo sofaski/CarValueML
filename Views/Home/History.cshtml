@@ -1,0 +1,40 @@
+﻿@model List<CarValueML.Models.PredictionHistory>
+
+<h2>Історія прогнозів</h2>
+<form asp-action="ClearHistory" method="post">
+    <button type="submit">Очистити історію</button>
+</form>
+
+<br />
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Дата</th>
+        <th>Buying</th>
+        <th>Maint</th>
+        <th>Doors</th>
+        <th>Persons</th>
+        <th>LugBoot</th>
+        <th>Safety</th>
+        <th>Price Category</th>
+        <th>Результат</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CreatedAt</td>
+            <td>@item.Buying</td>
+            <td>@item.Maint</td>
+            <td>@item.Doors</td>
+            <td>@item.Persons</td>
+            <td>@item.LugBoot</td>
+            <td>@item.Safety</td>
+            <td>@item.EstimatedPriceCategory</td>
+            <td>@item.PredictedClass</td>
+        </tr>
+    }
+</table>
+
+<br />
+<a asp-action="Index">Назад</a>
